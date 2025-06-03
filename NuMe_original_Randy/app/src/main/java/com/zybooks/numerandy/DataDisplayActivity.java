@@ -7,6 +7,8 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.telephony.SmsManager;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -59,6 +61,44 @@ public class DataDisplayActivity extends AppCompatActivity {
                 saveGoalWeight(goalWeight);
             }
         });
+
+        /*
+        * add TextWatcher to implement real-time goal validation feedback when user
+        * enters a goal weight.
+        */
+        mGoalWeightInput.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {}
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                if (s.length() > 0) {
+                    try {
+                        double goal = Double.parseDouble(s.toString());
+                        Cursor cursor = mDb.rawQuery("SELECT weight FROM daily_weights ORDER BY date DESC LIMIT 1", null);
+                        if (cursor.moveToFirst()) {
+                            double latestWeight = cursor.getDouble(0);
+                            String message;
+                            if (goal >= latestWeight) {
+                               message =  ("Goal is above or equal to current weight.");
+                            } else if (goal < latestWeight && goal >= latestWeight - 5) {
+                                message = "Moderate goal.";
+                            } else {
+                                message = "Aggressive goal.";
+                            }
+                            Toast.makeText(DataDisplayActivity.this, message, Toast.LENGTH_SHORT).show();
+                        }
+                        cursor.close();
+                    } catch (NumberFormatException e) {
+                        // ignore
+                    }
+                }
+
+            }
+        });
     }
 
     private void saveGoalWeight(double goalWeight) {
@@ -89,6 +129,8 @@ public class DataDisplayActivity extends AppCompatActivity {
             }
             cursor.close();
         }
+
+        // add with database enhancement updateGoalAchievementDate ()
     }
 
     private void sendSMSNotification() {
@@ -150,5 +192,8 @@ public class DataDisplayActivity extends AppCompatActivity {
         } else {
             Toast.makeText(this, "Error adding weight", Toast.LENGTH_SHORT).show();
         }
+
+        // as part of algos and data structures add calculateWeeklyChange ()
+
     }
 }
