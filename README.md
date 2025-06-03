@@ -12,7 +12,7 @@ ePortfolio
 
 
 ### Enhancement One:
-Link to the TextWatcher: [TextWatcher](https://github.com/rramoscode/rramoscode.github.io/pull/2).
+Link to the TextWatcher: [TextWatcher](https://github.com/rramoscode/rramoscode.github.io/pull/2/files).
 
 ### Goal Weight Input
 
@@ -30,3 +30,4 @@ mGoalWeightInput.addTextChangedListener(new TextWatcher() {
     }
     // other TextWatcher methods omitted for brevity
 });
+```
