@@ -31,3 +31,20 @@ mGoalWeightInput.addTextChangedListener(new TextWatcher() {
     // other TextWatcher methods omitted for brevity
 });
 ```
+
+### Enhancement Two:
+Link to calculateWeeklyChange: [Place Holder](https://github.com/rramoscode/rramoscode.github.io).
+
+### Weekly Weight Change Calculation
+
+The app provides users with a clear summary of their **weekly weight change**. This feature calculates the difference between the user's current weight and their average weight over the past seven days, offering quick insight into their progress.
+
+This is handled by querying the local database for historical weight entries:
+
+```java
+// Simplified example of how weekly change is calculated
+private void calculateWeeklyChange(double currentWeight) {
+    // Logic to retrieve past 7 days of weight data and calculate average
+    // ... (details are in the source file)
+}
+```
