@@ -24,7 +24,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         // create a table to store the goal weight
         db.execSQL("CREATE TABLE goal_weight (id INTEGER  PRIMARY KEY AUTOINCREMENT, user_id INTEGER, goal_weight REAL)");
 
-
+        // add new goal_history table ()
     }
 
     @Override
