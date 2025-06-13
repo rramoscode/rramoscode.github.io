@@ -33,7 +33,7 @@ mGoalWeightInput.addTextChangedListener(new TextWatcher() {
 ```
 
 ### Enhancement Two:
-Link to calculateWeeklyChange: [Place Holder](https://github.com/rramoscode/rramoscode.github.io).
+Link to calculateWeeklyChange: [calculate Weekly Change](https://github.com/rramoscode/rramoscode.github.io/pull/3).
 
 ### Weekly Weight Change Calculation
 
