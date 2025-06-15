@@ -49,7 +49,19 @@ private void calculateWeeklyChange(double currentWeight) {
 }
 ```
 
-### Enhancement Three:
+### Enhancement Three: Database
+
+Implement a new ‘goal_history’ table to track every time a goal is set and when it is achieved. Display a historical list of goal attempts and outcomes.
+
+## Table Structure: 
+
+CREATE TABLE goal_history (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    goal_weight REAL,
+    set_date TEXT,
+    achieved_date TEXT
+);
+
 Link to goal_history: [Goal History](https://github.com/rramoscode/rramoscode.github.io/pull/4).
 
 ### Goal History Table
@@ -61,24 +73,12 @@ This new structure is implemented in the DatabaseHelper.java file:
 ```java
 // Simplified onCreate method showing table creation
 public void onCreate(SQLiteDatabase db) {
-    db.execSQL("CREATE TABLE users (...)");
-    db.execSQL("CREATE TABLE daily_weights (...)");
-    db.execSQL("CREATE TABLE goal_weight (...)");
-    // New table to track goal history
-    db.execSQL("CREATE TABLE goal_history (" +
-        "id INTEGER PRIMARY KEY AUTOINCREMENT, " +
-        "goal_weight REAL, " +
-        "set_date TEXT, " +
-        "achieved_date TEXT)");
+    // ... (details are in the source file)
 }
 
 // Simplified onUpgrade method for database schema changes
 public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-    db.execSQL("DROP TABLE IF EXISTS users");
-    db.execSQL("DROP TABLE IF EXISTS daily_weights");
-    db.execSQL("DROP TABLE IF EXISTS goal_weight");
-    db.execSQL("DROP TABLE IF EXISTS goal_history"); // Dropping the new table too
-    onCreate(db);
+    // ... (details are in the source file)
 }
 ```
 
@@ -91,8 +91,6 @@ This is managed by a dedicated method in DataDisplayActivity.java:
 ```java
 // Method to update the achievement date when a goal is met
 private void updateGoalAchievementDate() {
-    ContentValues values = new ContentValues();
-    values.put("achieved_date", LocalDate.now().toString());
-    mDb.update("goal_history", values, "achieved_date IS NULL", null);
+    // ... (details are in the source file)
 }
 ```
