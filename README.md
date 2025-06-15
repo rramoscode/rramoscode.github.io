@@ -2,7 +2,8 @@ ePortfolio
 
 # NuMe Project
 
-<p align="center">![NuMe Icon](images/NuMe_app Small.jpeg)</p>
+![NuMe Icon](images/NuMe_app Small.jpeg)
+
 
 
 ### Code Review and planned enhancement for the NuMe Application
