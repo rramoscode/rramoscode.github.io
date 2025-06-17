@@ -10,10 +10,21 @@ ePortfolio
 
 
 
-### Enhancement One:
-Link to the TextWatcher: [TextWatcher](https://github.com/rramoscode/rramoscode.github.io/pull/2/files).
+# Enhancement One:
 
-### Goal Weight Input
+Implement real-time goal validation feedback when the user enters a goal weight (implemented with TextWatcher in Java). This will display messages dynamically based on comparison to the latest weight logged making the app more user-friendly and ensures a better user experience.
+
+### Psuedocode: 
+
+If (goalWeight < lowestTrackedWeight)
+   Display "Aggressive goal"
+Else if (goalWeight == currentWeight)
+   Display "Already at goal"
+Else
+   Display "Goal saved!"
+
+
+## Goal Weight Input
 
 Users can set a goal weight in the app. As they type, the app provides real-time feedback on whether their goal is **aggressive**, **moderate**, or **above their current weight**.
 
@@ -30,11 +41,23 @@ mGoalWeightInput.addTextChangedListener(new TextWatcher() {
     // other TextWatcher methods omitted for brevity
 });
 ```
+Link to the TextWatcher: [TextWatcher](https://github.com/rramoscode/rramoscode.github.io/pull/2/files).
 
-### Enhancement Two:
-Link to calculateWeeklyChange: [calculate Weekly Change](https://github.com/rramoscode/rramoscode.github.io/pull/3).
 
-### Weekly Weight Change Calculation
+# Enhancement Two:
+
+Implement a weekly average weight change algorithm. Used a filtered list of entries from the last 7 days. Results are displayed as a message. This enhancement introduces basic data processing using algorithmic principles and data filtering.
+
+### Psuedocode: 
+
+Get currentDate
+For all weights in past 7 days:
+    sum += weight
+avg = sum / numberOfDays
+Display currentWeight - avg
+
+
+## Weekly Weight Change Calculation
 
 The app provides users with a clear summary of their **weekly weight change**. This feature calculates the difference between the user's current weight and their average weight over the past seven days, offering quick insight into their progress.
 
@@ -48,9 +71,12 @@ private void calculateWeeklyChange(double currentWeight) {
 }
 ```
 
-### Enhancement Three: Database
+Link to calculateWeeklyChange: [calculate Weekly Change](https://github.com/rramoscode/rramoscode.github.io/pull/3).
 
-Implement a new ‘goal_history’ table to track every time a goal is set and when it is achieved. Display a historical list of goal attempts and outcomes.
+
+# Enhancement Three: Database
+
+Implemented a new ‘goal_history’ table to track every time a goal is set and when it is achieved. Display a historical list of goal attempts and outcomes.
 
 ## Table Structure: 
 
@@ -60,8 +86,6 @@ CREATE TABLE goal_history (
     set_date TEXT,
     achieved_date TEXT
 );
-
-Link to goal_history: [Goal History](https://github.com/rramoscode/rramoscode.github.io/pull/4).
 
 ### Goal History Table
 
@@ -81,7 +105,7 @@ public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
 }
 ```
 
-### Goal Achievement Tracking
+## Goal Achievement Tracking
 
 As part of the database enhancements, the application now actively tracks when a user achieves their set weight goal. When a user reaches their goal, the achievement date is recorded in the goal_history table, providing a valuable historical record of their progress.
 
@@ -93,3 +117,5 @@ private void updateGoalAchievementDate() {
     // ... (details are in the source file)
 }
 ```
+
+Link to goal_history: [Goal History](https://github.com/rramoscode/rramoscode.github.io/pull/4).
