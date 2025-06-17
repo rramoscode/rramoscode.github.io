@@ -9,11 +9,11 @@ ePortfolio
 <iframe width="560" height="315" src="https://www.youtube.com/embed/njhcB8VI0jM?si=W7s5Q8Ngxx2LQSpw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 <br>
 
-# Enhancement One:
+# Enhancement One: Software design and engineering
 
-Implement real-time goal validation feedback when the user enters a goal weight (implemented with TextWatcher in Java). This will display messages dynamically based on comparison to the latest weight logged making the app more user-friendly and ensures a better user experience.
+Implement real-time goal validation feedback when the user enters a goal weight (implemented with TextWatcher in Java). This will display messages dynamically based on comparison to the latest weight logged, making the app more user-friendly and ensuring a better user experience.
 
-### Psuedocode: 
+### Pseudocode: 
 ```
 If (goalWeight < lowestTrackedWeight)
    Display "Aggressive goal"
@@ -40,7 +40,7 @@ mGoalWeightInput.addTextChangedListener(new TextWatcher() {
     // other TextWatcher methods omitted for brevity
 });
 ```
-Check out TextWatcher Pull Request 2: [TextWatcher](https://github.com/rramoscode/rramoscode.github.io/pull/2/files).
+Check out the TextWatcher Pull Request 2: [TextWatcher](https://github.com/rramoscode/rramoscode.github.io/pull/2/files).
 
 ### Narrative: 
 The narrative provides additional details about Enhancement One for the NuMe Project. Specifically: 
@@ -50,12 +50,11 @@ The narrative provides additional details about Enhancement One for the NuMe Pro
 
 [Enhancement One Narrative](docs/Enhancement One_Narrative.pdf)
 
-
-# Enhancement Two:
+# Enhancement Two: Algorithms and data structure
 
 Implement a weekly average weight change algorithm. Used a filtered list of entries from the last 7 days. Results are displayed as a message. This enhancement introduces basic data processing using algorithmic principles and data filtering.
 
-### Psuedocode: 
+### Pseudocode: 
 ```
 Get currentDate
 For all weights in past 7 days:
@@ -78,7 +77,16 @@ private void calculateWeeklyChange(double currentWeight) {
 }
 ```
 
-Link to calculateWeeklyChange: [calculate Weekly Change](https://github.com/rramoscode/rramoscode.github.io/pull/3).
+Check out calculateWeeklyChange Pull Request 3: [calculate Weekly Change](https://github.com/rramoscode/rramoscode.github.io/pull/3).
+
+
+### Narrative: 
+The narrative provides additional details about Enhancement Two for the NuMe Project. Specifically. 
+* Briefly describe the NuMe App.
+* Justify the inclusion of the NuMe App in this ePortfolio.
+* Reflect on the process of enhancing the NuMe App.
+
+[Enhancement One Narrative](docs/Enhancement Two_Narrative.pdf)
 
 
 # Enhancement Three: Database
@@ -125,4 +133,12 @@ private void updateGoalAchievementDate() {
 }
 ```
 
-Link to goal_history: [Goal History](https://github.com/rramoscode/rramoscode.github.io/pull/4).
+Check out goal_history Pull Request 4: [Goal History](https://github.com/rramoscode/rramoscode.github.io/pull/4).
+
+### Narrative: 
+The narrative provides additional detial about Enhancement Three for the NuMe Project. Specifically. 
+* Briefly describe the NuMe App.
+* Justify the inclusion of the NuMe App in this ePortfolio.
+* Reflect on the process of enhancing the NuMe App.
+
+[Enhancement One Narrative](docs/Enhancement Three_Narrative.pdf)
