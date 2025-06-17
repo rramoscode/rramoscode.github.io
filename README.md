@@ -49,7 +49,7 @@ The [Enhancement One Narrative](docs/Enhancement One_Narrative.pdf) provides add
 * Reflect on the process of enhancing the NuMe App.
 
 
-# Enhancement Two: Algorithms and data structure
+# Enhancement Two: Algorithms and data structures
 
 Implement a weekly average weight change algorithm. Used a filtered list of entries from the last 7 days. Results are displayed as a message. This enhancement introduces basic data processing using algorithmic principles and data filtering.
 
