@@ -42,8 +42,8 @@ mGoalWeightInput.addTextChangedListener(new TextWatcher() {
 ### Pull Request:
 Check out the TextWatcher Pull Request 2: [TextWatcher](https://github.com/rramoscode/rramoscode.github.io/pull/2/files).
 
-### Narrative: [Enhancement One Narrative](docs/Enhancement One_Narrative.pdf)
-The narrative provides additional details about Enhancement One for the NuMe Project. Specifically: 
+### Narrative:
+The [Enhancement One Narrative](docs/Enhancement One_Narrative.pdf) provides additional details about Enhancement One for the NuMe Project. Specifically: 
 * Briefly describe the NuMe App.
 * Justify the inclusion of the NuMe App in this ePortfolio.
 * Reflect on the process of enhancing the NuMe App.
@@ -79,8 +79,8 @@ private void calculateWeeklyChange(double currentWeight) {
 Check out calculateWeeklyChange Pull Request 3: [calculate Weekly Change](https://github.com/rramoscode/rramoscode.github.io/pull/3).
 
 
-### Narrative: [Enhancement One Narrative](docs/Enhancement Two_Narrative.pdf)
-The narrative provides additional details about Enhancement Two for the NuMe Project. Specifically. 
+### Narrative:
+The [Enhancement One Narrative](docs/Enhancement Two_Narrative.pdf) provides additional details about Enhancement Two for the NuMe Project. Specifically. 
 * Briefly describe the NuMe App.
 * Justify the inclusion of the NuMe App in this ePortfolio.
 * Reflect on the process of enhancing the NuMe App.
@@ -132,8 +132,8 @@ private void updateGoalAchievementDate() {
 ### Pull Request:
 Check out goal_history Pull Request 4: [Goal History](https://github.com/rramoscode/rramoscode.github.io/pull/4).
 
-### Narrative: [Enhancement One Narrative](docs/Enhancement Three_Narrative.pdf)
-The narrative provides additional details about Enhancement Three for the NuMe Project. Specifically. 
+### Narrative:
+The [Enhancement One Narrative](docs/Enhancement Three_Narrative.pdf) provides additional details about Enhancement Three for the NuMe Project. Specifically. 
 * Briefly describe the NuMe App.
 * Justify the inclusion of the NuMe App in this ePortfolio.
 * Reflect on the process of enhancing the NuMe App.
