@@ -43,6 +43,7 @@ mGoalWeightInput.addTextChangedListener(new TextWatcher() {
 ```
 Link to the TextWatcher: [TextWatcher](https://github.com/rramoscode/rramoscode.github.io/pull/2/files).
 
+[Enhancement One Narrative](Enhancement One_Narrative.docx)
 
 # Enhancement Two:
 
