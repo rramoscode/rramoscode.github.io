@@ -139,10 +139,9 @@ The [Enhancement Three Narrative](docs/Enhancement Three_Narrative.pdf) provides
 * Reflect on the process of enhancing the NuMe App.
 
 # NuMe Application before enhancements: 
-![NuMe Add Weight Screen](images/NuMe_App_Add_Weight_Screen.png)
+<img align="left" src="images/NuMe_App_Add_Weight_Screen.png" alt="Alt text for your image"> 
+Place Holder: text here will appear to the right of the image.
 
-<img align="right" src="images/NuMe_App_Add_Weight_Screen.png" alt="Alt text for your image"> 
-Some text here that will appear to the left of the image.
 
 
 # NuMe Application before enhancements: 
