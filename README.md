@@ -4,14 +4,13 @@ ePortfolio
 
 ![NuMe Icon](images/NuMe_app Small.jpeg)
 
-
 ### Code Review and planned enhancement for the NuMe Application
 <iframe width="560" height="315" src="https://www.youtube.com/embed/njhcB8VI0jM?si=W7s5Q8Ngxx2LQSpw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 <br>
 
 # Enhancement One: Software design and engineering
 
-Implement real-time goal validation feedback when the user enters a goal weight (implemented with TextWatcher in Java). This will display messages dynamically based on comparison to the latest weight logged, making the app more user-friendly and ensuring a better user experience.
+Implement real-time goal validation feedback when the user enters a goal weight (implemented with TextWatcher in Java). This feature displays messages dynamically based on comparisons to the latest logged weight, making the app more user-friendly and ensuring a better user experience.
 
 ### Pseudocode: 
 ```
@@ -40,15 +39,15 @@ mGoalWeightInput.addTextChangedListener(new TextWatcher() {
     // other TextWatcher methods omitted for brevity
 });
 ```
+### Pull Request:
 Check out the TextWatcher Pull Request 2: [TextWatcher](https://github.com/rramoscode/rramoscode.github.io/pull/2/files).
 
-### Narrative: 
+### Narrative: [Enhancement One Narrative](docs/Enhancement One_Narrative.pdf)
 The narrative provides additional details about Enhancement One for the NuMe Project. Specifically: 
 * Briefly describe the NuMe App.
 * Justify the inclusion of the NuMe App in this ePortfolio.
 * Reflect on the process of enhancing the NuMe App.
 
-[Enhancement One Narrative](docs/Enhancement One_Narrative.pdf)
 
 # Enhancement Two: Algorithms and data structure
 
@@ -76,17 +75,15 @@ private void calculateWeeklyChange(double currentWeight) {
     // ... (details are in the source file)
 }
 ```
-
+### Pull Request:
 Check out calculateWeeklyChange Pull Request 3: [calculate Weekly Change](https://github.com/rramoscode/rramoscode.github.io/pull/3).
 
 
-### Narrative: 
+### Narrative: [Enhancement One Narrative](docs/Enhancement Two_Narrative.pdf)
 The narrative provides additional details about Enhancement Two for the NuMe Project. Specifically. 
 * Briefly describe the NuMe App.
 * Justify the inclusion of the NuMe App in this ePortfolio.
 * Reflect on the process of enhancing the NuMe App.
-
-[Enhancement One Narrative](docs/Enhancement Two_Narrative.pdf)
 
 
 # Enhancement Three: Database
@@ -132,13 +129,13 @@ private void updateGoalAchievementDate() {
     // ... (details are in the source file)
 }
 ```
-
+### Pull Request:
 Check out goal_history Pull Request 4: [Goal History](https://github.com/rramoscode/rramoscode.github.io/pull/4).
 
-### Narrative: 
-The narrative provides additional detial about Enhancement Three for the NuMe Project. Specifically. 
+### Narrative: [Enhancement One Narrative](docs/Enhancement Three_Narrative.pdf)
+The narrative provides additional details about Enhancement Three for the NuMe Project. Specifically. 
 * Briefly describe the NuMe App.
 * Justify the inclusion of the NuMe App in this ePortfolio.
 * Reflect on the process of enhancing the NuMe App.
 
-[Enhancement One Narrative](docs/Enhancement Three_Narrative.pdf)
+
