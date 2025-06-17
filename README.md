@@ -15,14 +15,14 @@ ePortfolio
 Implement real-time goal validation feedback when the user enters a goal weight (implemented with TextWatcher in Java). This will display messages dynamically based on comparison to the latest weight logged making the app more user-friendly and ensures a better user experience.
 
 ### Psuedocode: 
-
+```
 If (goalWeight < lowestTrackedWeight)
    Display "Aggressive goal"
 Else if (goalWeight == currentWeight)
    Display "Already at goal"
 Else
    Display "Goal saved!"
-
+```
 
 ## Goal Weight Input
 
@@ -49,13 +49,13 @@ Link to the TextWatcher: [TextWatcher](https://github.com/rramoscode/rramoscode.
 Implement a weekly average weight change algorithm. Used a filtered list of entries from the last 7 days. Results are displayed as a message. This enhancement introduces basic data processing using algorithmic principles and data filtering.
 
 ### Psuedocode: 
-
+```
 Get currentDate
 For all weights in past 7 days:
     sum += weight
 avg = sum / numberOfDays
 Display currentWeight - avg
-
+```
 
 ## Weekly Weight Change Calculation
 
@@ -79,14 +79,14 @@ Link to calculateWeeklyChange: [calculate Weekly Change](https://github.com/rram
 Implemented a new ‘goal_history’ table to track every time a goal is set and when it is achieved. Display a historical list of goal attempts and outcomes.
 
 ## Table Structure: 
-
+```
 CREATE TABLE goal_history (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     goal_weight REAL,
     set_date TEXT,
     achieved_date TEXT
 );
-
+```
 ### Goal History Table
 
 The application's database has been enhanced to provide more robust user data management and tracking capabilities. This includes dedicated tables for user accounts, daily weight logs, and goal weights. A new goal_history table was added to specifically track user goals, logging each new goal set and marking when it's achieved.
