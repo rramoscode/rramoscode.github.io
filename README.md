@@ -43,7 +43,14 @@ mGoalWeightInput.addTextChangedListener(new TextWatcher() {
 ```
 Link to the TextWatcher: [TextWatcher](https://github.com/rramoscode/rramoscode.github.io/pull/2/files).
 
-[Enhancement One Narrative](Enhancement One_Narrative.docx)
+### Narrative: 
+The narrative provides additional details about Enhancement One for the NuMe Project. Specifically: 
+* Briefly describe the NuMe App.
+* Justify the inclusion of the NuMe App in this ePortfolio.
+* Reflect on the process of enhancing the NuMe App.
+
+[Enhancement One Narrative](docs/Enhancement One_Narrative.pdf)
+
 
 # Enhancement Two:
 
