@@ -1,6 +1,6 @@
 ePortfolio
 
-# NuMe Project Test
+# NuMe Project
 
 ![NuMe Icon](images/NuMe_app Small.jpeg)
 
