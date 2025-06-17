@@ -80,7 +80,7 @@ Check out calculateWeeklyChange Pull Request 3: [calculate Weekly Change](https:
 
 
 ### Narrative:
-The [Enhancement One Narrative](docs/Enhancement Two_Narrative.pdf) provides additional details about Enhancement Two for the NuMe Project. Specifically. 
+The [Enhancement Two Narrative](docs/Enhancement Two_Narrative.pdf) provides additional details about Enhancement Two for the NuMe Project. Specifically. 
 * Briefly describe the NuMe App.
 * Justify the inclusion of the NuMe App in this ePortfolio.
 * Reflect on the process of enhancing the NuMe App.
@@ -133,9 +133,12 @@ private void updateGoalAchievementDate() {
 Check out goal_history Pull Request 4: [Goal History](https://github.com/rramoscode/rramoscode.github.io/pull/4).
 
 ### Narrative:
-The [Enhancement One Narrative](docs/Enhancement Three_Narrative.pdf) provides additional details about Enhancement Three for the NuMe Project. Specifically. 
+The [Enhancement Three Narrative](docs/Enhancement Three_Narrative.pdf) provides additional details about Enhancement Three for the NuMe Project. Specifically. 
 * Briefly describe the NuMe App.
 * Justify the inclusion of the NuMe App in this ePortfolio.
 * Reflect on the process of enhancing the NuMe App.
 
+# NuMe Application before enhancements: 
+![NuMe Add Weight Screen](images/NuMe_App_Add_Weight_Screen.png)
 
+# NuMe Application before enhancements: 
