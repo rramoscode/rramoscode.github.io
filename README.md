@@ -140,7 +140,22 @@ The [Enhancement Three Narrative](docs/Enhancement Three_Narrative.pdf) provides
 
 # NuMe Application before enhancements:
 <img align="left" src="images/NuMe_App_Add_Weight_Screen.png" alt="Alt text for your image"/> 
-Place Holder: text here will appear to the right of the image.
+### Enhancement One: 
+* No real-time feedback when setting a goal weight. 
+* Users have to guess if their goal is aggressive or realistic.
+* No clear prompts for the goal weight input field.
+* Date formatting or no date input
+
+### Enhancement Two: 
+* No analytical insights are provided to the user.
+* Users cannot see trends, such as their weekly weight change.
+* Results not displayed.
+
+### Enhancement Three: 
+* No historical tracking of goals exists.
+* Old goals are lost. When changing the goal weight
+* No logging exists for user goal attempts 
+* No indicators when goals are reached.
 <br clear="left"/>
 
 
