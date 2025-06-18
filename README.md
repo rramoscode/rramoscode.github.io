@@ -146,7 +146,7 @@ The [Enhancement Three Narrative](docs/Enhancement Three_Narrative.pdf) provides
       <img src="images/NuMe_App_Add_Weight_Screen.png" alt="NuMe App Add Weight Screen" width="300">
     </td>
     <td valign="top">
-       
+
       ### Enhancement One:
       * No real-time feedback when setting a goal weight.
       * Users have to guess if their goal is aggressive or realistic.
@@ -163,8 +163,8 @@ The [Enhancement Three Narrative](docs/Enhancement Three_Narrative.pdf) provides
       * Old goals are lost. When changing the goal weight
       * No logging exists for user goal attempts
       * No indicators when goals are reached.
-      
-    </td>
+
+   </td>
   </tr>
 </table>
 
