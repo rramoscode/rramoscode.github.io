@@ -138,6 +138,7 @@ The [Enhancement Three Narrative](docs/Enhancement Three_Narrative.pdf) provides
 * Justify the inclusion of the NuMe App in this ePortfolio.
 * Reflect on the process of enhancing the NuMe App.
 
+
 # NuMe Application before enhancements:
 
 <table>
@@ -146,24 +147,30 @@ The [Enhancement Three Narrative](docs/Enhancement Three_Narrative.pdf) provides
       <img src="images/NuMe_App_Add_Weight_Screen.png" alt="NuMe App Add Weight Screen" width="300">
     </td>
     <td valign="top">
+      <h3>Enhancement One:</h3>
 
-      ### Enhancement One:
-      * No real-time feedback when setting a goal weight.
-      * Users have to guess if their goal is aggressive or realistic.
-      * No clear prompts for the goal weight input field.
-      * Date formatting or no date input
+      <ul>
+        <li>No real-time feedback when setting a goal weight.</li>
+        <li>Users have to guess if their goal is aggressive or realistic.</li>
+        <li>No clear prompts for the goal weight input field.</li>
+        <li>Date formatting or no date input</li>
+      </ul>
 
-      ### Enhancement Two:
-      * No analytical insights are provided to the user.
-      * Users cannot see trends, such as their weekly weight change.
-      * Results not displayed.
+      <h3>Enhancement Two:</h3>
+      <ul>
+        <li>No analytical insights are provided to the user.</li>
+        <li>Users cannot see trends, such as their weekly weight change.</li>
+        <li>Results not displayed.</li>
+      </ul>
 
-      ### Enhancement Three:
-      * No historical tracking of goals exists.
-      * Old goals are lost. When changing the goal weight
-      * No logging exists for user goal attempts
-      * No indicators when goals are reached.
-
+      <h3>Enhancement Three:</h3>
+      <ul>
+        <li>No historical tracking of goals exists.</li>
+        <li>Old goals are lost. When changing the goal weight</li>
+        <li>No logging exists for user goal attempts</li>
+        <li>No indicators when goals are reached.</li>
+      </ul>
+      
    </td>
   </tr>
 </table>
