@@ -145,6 +145,6 @@ Place Holder: text here will appear to the right of the image.
 
 
 # NuMe Application after enhancements: 
-![Demo](images/Screen Recording 2025-06-17 at 5.13.14 PM.mov)
+![Demo](images/Demo.gif)
 
 
