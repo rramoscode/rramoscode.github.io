@@ -144,7 +144,7 @@ The [Enhancement Three Narrative](docs/Enhancement Three_Narrative.pdf) provides
 <table>
   <tr>
     <td valign="top">
-      <img src="images/NuMe_App_Add_Weight_Screen.png" alt="NuMe App Add Weight Screen" width="400">
+      <img src="images/NuMe_App_Add_Weight_Screen.png" alt="NuMe App Add Weight Screen" width="500">
     </td>
     <td valign="top">
       <h3>Enhancement One:</h3>
