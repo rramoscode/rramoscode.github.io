@@ -139,26 +139,33 @@ The [Enhancement Three Narrative](docs/Enhancement Three_Narrative.pdf) provides
 * Reflect on the process of enhancing the NuMe App.
 
 # NuMe Application before enhancements:
-<img align="left" src="images/NuMe_App_Add_Weight_Screen.png" alt="Alt text for your image"/> 
+# NuMe Application before enhancements:
 
-   ### Enhancement One: 
-   * No real-time feedback when setting a goal weight. 
-   * Users have to guess if their goal is aggressive or realistic.
-   * No clear prompts for the goal weight input field.
-   * Date formatting or no date input
+<table>
+  <tr>
+    <td valign="top">
+      <img src="images/NuMe_App_Add_Weight_Screen.png" alt="NuMe App Add Weight Screen" width="300">
+    </td>
+    <td valign="top">
+      ### Enhancement One:
+      * No real-time feedback when setting a goal weight.
+      * Users have to guess if their goal is aggressive or realistic.
+      * No clear prompts for the goal weight input field.
+      * Date formatting or no date input
 
-   ### Enhancement Two: 
-   * No analytical insights are provided to the user.
-   * Users cannot see trends, such as their weekly weight change.
-   * Results not displayed.
+      ### Enhancement Two:
+      * No analytical insights are provided to the user.
+      * Users cannot see trends, such as their weekly weight change.
+      * Results not displayed.
 
-   ### Enhancement Three: 
-   * No historical tracking of goals exists.
-   * Old goals are lost. When changing the goal weight
-   * No logging exists for user goal attempts 
-   * No indicators when goals are reached.
-<br clear="left"/>
-
+      ### Enhancement Three:
+      * No historical tracking of goals exists.
+      * Old goals are lost. When changing the goal weight
+      * No logging exists for user goal attempts
+      * No indicators when goals are reached.
+    </td>
+  </tr>
+</table>
 
 # NuMe Application after enhancements: 
 ![Demo](images/Demo.gif)
