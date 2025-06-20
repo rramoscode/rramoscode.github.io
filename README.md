@@ -2,7 +2,7 @@
 Review my [Professional Self-Assessment](docs/Professional Self-Assessment.pdf) to learn more about me and my Computer Science journey. 
 
 # NuMe Project
-The NuMe app is meant to be a simple weight tracking mobile application, designed to allow users to:
+The NuMe app is a simple weight tracking mobile application, designed to allow users to:
 * Log daily weights
 * Set and monitor a goal weight
 * Be notified when they reach their target via SMS
