@@ -11,7 +11,7 @@ The NuMe app is a simple weight tracking mobile application, designed to allow u
 	<picture>
 	  <source media="(prefers-color-scheme: dark)" srcset="images/NuMe_app_Small_dark.jpg">
 	  <source media="(prefers-color-scheme: light)" srcset="images/NuMe_app_Small_light.jpg">
-	  <img src="NuMe_app Small.jpeg" alt="NuMe Icon" width="150">
+	  <img src="NuMe_app Small.jpeg" alt="NuMe Icon" width="200">
   </picture>
 </p>
 <br>
