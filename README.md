@@ -82,7 +82,7 @@ private void calculateWeeklyChange(double currentWeight) {
 }
 ```
 ### Pull Request:
-Check out calculateWeeklyChange Pull Request 3: [calculate Weekly Change](https://github.com/rramoscode/rramoscode.github.io/pull/3).
+Check out calculateWeeklyChange Pull Request 3: [calculate Weekly Change](https://github.com/rramoscode/rramoscode.github.io/pull/3/files).
 
 
 ### Narrative:
@@ -136,7 +136,7 @@ private void updateGoalAchievementDate() {
 }
 ```
 ### Pull Request:
-Check out goal_history Pull Request 4: [Goal History](https://github.com/rramoscode/rramoscode.github.io/pull/4).
+Check out goal_history Pull Request 4: [Goal History](https://github.com/rramoscode/rramoscode.github.io/pull/4/files).
 
 ### Narrative:
 The [Enhancement Three Narrative](docs/Enhancement Three_Narrative.pdf) provides additional details about Enhancement Three for the NuMe Project. Specifically. 
