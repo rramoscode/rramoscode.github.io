@@ -7,6 +7,8 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.telephony.SmsManager;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -17,6 +19,7 @@ import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -59,6 +62,45 @@ public class DataDisplayActivity extends AppCompatActivity {
                 saveGoalWeight(goalWeight);
             }
         });
+
+        /*
+        * as part of Software Engineering and Design add Text Watcher
+        * this will implement real-time goal validation feedback when user
+        * enters a goal weight.
+        */
+        mGoalWeightInput.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {}
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                if (s.length() > 0) {
+                    try {
+                        double goal = Double.parseDouble(s.toString());
+                        Cursor cursor = mDb.rawQuery("SELECT weight FROM daily_weights ORDER BY date DESC LIMIT 1", null);
+                        if (cursor.moveToFirst()) {
+                            double latestWeight = cursor.getDouble(0);
+                            String message;
+                            if (goal >= latestWeight) {
+                               message =  ("Goal is above or equal to current weight.");
+                            } else if (goal < latestWeight && goal >= latestWeight - 5) {
+                                message = "Moderate goal.";
+                            } else {
+                                message = "Aggressive goal.";
+                            }
+                            Toast.makeText(DataDisplayActivity.this, message, Toast.LENGTH_SHORT).show();
+                        }
+                        cursor.close();
+                    } catch (NumberFormatException e) {
+                        // ignore
+                    }
+                }
+
+            }
+        });
     }
 
     private void saveGoalWeight(double goalWeight) {
@@ -89,6 +131,13 @@ public class DataDisplayActivity extends AppCompatActivity {
             }
             cursor.close();
         }
+    }
+
+    // added with database enhancement updateGoalAchievementDate ()
+    private void updateGoalAchievementDate() {
+        ContentValues values = new ContentValues();
+        values.put("achieved_date", LocalDate.now().toString());
+        mDb.update("goal_history", values, "achieved_date IS NULL", null);
     }
 
     private void sendSMSNotification() {
@@ -133,22 +182,47 @@ public class DataDisplayActivity extends AppCompatActivity {
         }
 
         double weight = Double.parseDouble(weightString);
-
         ContentValues values = new ContentValues();
         values.put("weight", weight);
-        values.put("date", date.isEmpty() ? "Unknown" : date);
+
+        //updated as part of algorithms and data structures
+        values.put("date", date.isEmpty() ? LocalDate.now().toString() : date);
         long newRowId = mDb.insert("daily_weights", null, values);
 
         if (newRowId != -1) {
             Toast.makeText(this, "Weight added successfully!", Toast.LENGTH_SHORT).show();
-
             mWeightInput.setText("");
             mDateInput.setText("");
-
             checkIfGoalReached(weight);
+            calculateWeeklyChange(weight); //added as part of algorithms and data structures
             loadWeightData();
         } else {
             Toast.makeText(this, "Error adding weight", Toast.LENGTH_SHORT).show();
         }
     }
-}
+
+        /* as part of algorithms and data structures add calculateWeeklyChange ()
+        * This method will filter the entries from the past 7 days, calculate the average,
+        * and display a message comparing the current weight to the weekly average.
+         */
+
+        private void calculateWeeklyChange(double currentWeight) {
+            String sevenDaysAgo = LocalDate.now().minusDays(7).toString();
+            double total = 0.0;
+            int count = 0;
+            Cursor cursor = mDb.query("daily_weights", new String[]{"weight"}, "date >= ?", new String[]{sevenDaysAgo}, null, null, null);
+            if (cursor != null) {
+                while (cursor.moveToNext()) {
+                    total += cursor.getDouble(0);
+                    count++;
+                }
+                cursor.close();
+            }
+            if (count > 0) {
+                double avg = total / count;
+                double diff = currentWeight - avg;
+                String feedback =  String.format("Change in last 7 days: %.2f lbs", diff);
+                Toast.makeText(this, feedback, Toast.LENGTH_LONG).show();
+            }
+        }
+    }
