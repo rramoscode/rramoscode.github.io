@@ -7,11 +7,13 @@ The NuMe app is a simple weight tracking mobile application, designed to allow u
 * Set and monitor a goal weight
 * Be notified when they reach their target via SMS
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="images/NuMe_app_Small_dark.jpg">
-  <source media="(prefers-color-scheme: light)" srcset="images/NuMe_app_Small_light.jpg">
-  <img src="NuMe_app Small.jpeg" alt="NuMe Icon" width="150">
-</picture>
+<p align = "center">
+	<picture>
+	  <source media="(prefers-color-scheme: dark)" srcset="images/NuMe_app_Small_dark.jpg">
+	  <source media="(prefers-color-scheme: light)" srcset="images/NuMe_app_Small_light.jpg">
+	  <img src="NuMe_app Small.jpeg" alt="NuMe Icon" width="150">
+  </picture>
+</p>
 <br>
 
 ### Code Review and planned enhancement for the NuMe Application
