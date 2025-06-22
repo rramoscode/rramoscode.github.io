@@ -5,7 +5,7 @@ Review my [Professional Self-Assessment](docs/Professional Self-Assessment.pdf) 
 The NuMe app is a simple weight tracking mobile application, designed to allow users to:
 * Log daily weights
 * Set and monitor a goal weight
-* Be notified when they reach their target via SMS
+* Be notified when they reach their target weight via SMS
 
 <p align = "center">
 	<picture>
