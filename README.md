@@ -191,3 +191,5 @@ The [Enhancement Three Narrative](docs/Enhancement Three_Narrative.pdf) provides
 ![Demo](images/Demo.gif)
 
 <img src="images/Demo.gif" alt="Demo Animation" width="400" height="250">
+
+<img src="images/Demo.gif" alt="Demo Animation" width="400">
